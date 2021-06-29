@@ -1,0 +1,19 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "El objetivo de este ejercicio es crear un aplicación para poder consultar los restaurantes de New York.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./app.js",
+    "db": "node ./scripts/initDB.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0"
+  }
+}
