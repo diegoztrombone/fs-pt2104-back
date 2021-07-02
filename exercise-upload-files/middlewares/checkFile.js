@@ -1,7 +1,6 @@
 const { URL, PORT, PUBLIC } = require('../constants')
 
 module.exports = (req, res, next) => {
-    console.log("<<<<", req.file)
     if(!req.file) {
         return next({ info: new Error('file is mandatory') })
     }

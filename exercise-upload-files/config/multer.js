@@ -13,7 +13,7 @@ const check = fields => (req, file, next) => {
 
 const upload = multer({
     dest: "uploads",
-    fileFilter: check(['username', 'name', 'email', 'birthdate', ]),
+    fileFilter: check(['username', 'name', 'email', 'birthdate']),
     
 })
 

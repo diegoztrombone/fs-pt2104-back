@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 
 const { single } = require('../../config/multer')
-const { checkFile } = require('../../middlewares')
+const { checkFile, checkUser } = require('../../middlewares')
 
 
 
@@ -11,6 +11,6 @@ const createUser = require('./create-user')
 
 
 router.post('/new',[single, checkFile], createUser)
-router.get('/:username', getUser)
+router.get('/:username', checkUser, getUser)
 
 module.exports = router
