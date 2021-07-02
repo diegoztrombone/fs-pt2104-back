@@ -5,8 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "seeds": "node scripts/seeds.js"
+    "dev": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
