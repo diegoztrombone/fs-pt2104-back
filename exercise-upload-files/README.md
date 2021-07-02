@@ -17,7 +17,7 @@
     - enabled (Boolean, default true)
 
 2. Rutas
-    1. POST para crear un nuevo usuario.
+    1. POST para crear un nuevo usuario.  ok!
     2. GET para obtener los siguientes datos del usuario (mientras `enabled` sea `true`. Si no, debería devolver error con que el usuario no existe)
         - username
         - age (sí, edad)
