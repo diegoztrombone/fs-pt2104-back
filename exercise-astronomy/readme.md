@@ -6,13 +6,13 @@
 
   * Ruta base: `http://localhost:3000/astronomy/landings`
 
-    1. GET para obtener nombre y masa de todos aquellos meteoritos cuya masa sea igual o superior a una masa (gr) dada (con query parameters)
+    1. GET para obtener nombre y masa de todos aquellos meteoritos cuya masa sea igual o superior a una masa (gr) dada (con query parameters) OK!
     - Ejemplo: `/astronomy/landings?minimum_mass=200000`
 
     2. GET para obtener nombre y masa de uno o más meteoritos cuya masa sea la especificada (route params)
-    - Ejemplo: `/astronomy/landings/mass/200000`
+    - Ejemplo: `/astronomy/landings/mass/200000` OK
 
-    3. GET para obtener los nombres y clase de aquellos meteoritos cuya clase sea la registrada (route params)
+    3. GET para obtener los nombres y clase de aquellos meteoritos cuya clase sea la registrada (route params) OK
     - Ejemplo: `/astronomy/landings/class/L6`
 
     4. GET para obtener nombre, masa y fecha de todos los meteoritos caídos en determinadas fechas de la siguiente manera:
