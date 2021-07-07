@@ -13,9 +13,9 @@
     - Ejemplo: `/astronomy/landings/mass/200000` OK
 
     3. GET para obtener los nombres y clase de aquellos meteoritos cuya clase sea la registrada (route params) OK
-    - Ejemplo: `/astronomy/landings/class/L6`
+    - Ejemplo: `/astronomy/landings/class/L6` OK
 
-    4. GET para obtener nombre, masa y fecha de todos los meteoritos caídos en determinadas fechas de la siguiente manera:
+    4. GET para obtener nombre, masa y fecha de todos los meteoritos caídos en determinadas fechas de la siguiente manera: NOT OK
       * `/astronomy/landings?from=1960&to=1990`
       * `/astronomy/landings?from=1960`
       * `/astronomy/landings?to=1990`

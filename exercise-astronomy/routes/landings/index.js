@@ -5,7 +5,6 @@ const getByMass = require('./getByMass')
 const getRecclass = require('./getRecclass')
 
 
-
 router.get('/', getNameAndMass)
 router.get('/mass/:mass', getByMass)
 router.get('/class/:recclass', getRecclass)

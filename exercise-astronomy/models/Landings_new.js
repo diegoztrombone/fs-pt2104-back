@@ -34,7 +34,7 @@ const LandingSchema = new Schema({
         require: true,
     },
     year: {
-        type: String,
+        type: Date,
         require: true,
     },
     reclat: {
@@ -51,4 +51,4 @@ const LandingSchema = new Schema({
     },
 })
 
-module.exports = mongoose.model('LandingsCollection', LandingSchema, 'LandingsCollection')
+module.exports = mongoose.model('LandingCollect', LandingSchema )

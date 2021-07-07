@@ -1,31 +1,33 @@
-const LandingModel = require('../models/Landigs')
+const LandingModel = require('../models/Landings_new')
 
 const getNameAndMass = async (measure) => {
-    const result = await LandingModel.find( { mass: { $gte: measure } })
+    const result = await LandingModel.find({ mass: { $gte: measure } })
     return result
 
 }
 
 const getByMass = async (measure) => {
-    const result = await LandingModel.find( { mass: measure })
+    const result = await LandingModel.find({ mass: measure })
     return result
 
 }
 
 const getRecclass = async (data) => {
-    const result = await LandingModel.find( { recclass: data })
+    const result = await LandingModel.find({ recclass: data })
     return result
 
 }
 
-const getIntervalYears = async (from, to) => {
-    
-    
-    console.log(from, to)
-    const result = await LandingModel.find( { year: { $gt: new Date(from)}})
-    console.log("result en query", result)
-    return result
+const getIntervalYears = async (from = "0", to = new Date().getFullYear().toString) => {
+    console.log("query", from, to)
+    const resultado = await LandingModel.find({ year: { $gte: from, $lte: to } }).sort({year: 1})
+    console.log(resultado)
+    return resultado
 
+    // console.log(fecha)
+    // const result = await LandingModel.find( { year: new Date('1990-02-03')})
+    // console.log("result en query", result)
+    //
 }
 
 
