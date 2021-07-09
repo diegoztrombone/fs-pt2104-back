@@ -15,7 +15,7 @@
     3. GET para obtener los nombres y clase de aquellos meteoritos cuya clase sea la registrada (route params) OK
     - Ejemplo: `/astronomy/landings/class/L6` OK
 
-    4. GET para obtener nombre, masa y fecha de todos los meteoritos caídos en determinadas fechas de la siguiente manera: NOT OK
+    4. GET para obtener nombre, masa y fecha de todos los meteoritos caídos en determinadas fechas de la siguiente manera:  OK
       * `/astronomy/landings?from=1960&to=1990`
       * `/astronomy/landings?from=1960`
       * `/astronomy/landings?to=1990`
@@ -27,7 +27,7 @@
   * Ruta base: `http://localhost:3000/astronomy/neas`
 
     1. GET para obtener la designación y el período anual en base a la clase orbital del asteroide (con query params)
-    - Ejemplo: `/astronomy/neas?class=aten`
+    - Ejemplo: `/astronomy/neas?class=aten` ok
 
     2. GET para obtener designación, fecha y período anual de todos los asteroides que cumplan el filtro de fechas dadas
       * `/astronomy/neas?from=2010&to=2015`

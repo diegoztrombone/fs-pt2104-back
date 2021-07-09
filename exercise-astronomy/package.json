@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "landingsdb": "node scripts/landings_seed.js"
+    "landingsdb": "node scripts/landings_seed.js",
+    "neasdb": "node scripts/neas_seed.js"
   },
   "author": "",
   "license": "ISC",
